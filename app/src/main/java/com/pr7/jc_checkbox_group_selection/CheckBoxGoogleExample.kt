@@ -198,6 +198,11 @@ fun RadioButtons() {
             Text(text = info.text)
         }
     }
+    
+    
+    radioButtons.filter { it.isChecked }.forEach { 
+        Text(text = it.text)
+    }
 }
 
 
